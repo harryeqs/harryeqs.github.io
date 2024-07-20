@@ -9,7 +9,6 @@ profile:
   image: my_photo.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Selwyn College, Cambridge</p>
 
 
 news: false # includes a list of news items
