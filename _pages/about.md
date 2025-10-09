@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I'm Qianshuo (Harry), a fourth-year Information and Computer Engineering undergraduate at the University of Cambridge.  
-
-My Chinese name is 叶千硕 (Ye, Qianshuo): 叶 (yè) means *leaf*, 千 (qiān) means *thousand*, and 硕 (shuò) means *large*.  
+Hi there! I'm Qianshuo (Harry) Ye (Chinese: 叶千硕), a fourth-year Information and Computer Engineering undergraduate at the University of Cambridge.  
 
 I am currently working with [Professor Bill Byrne](https://sites.google.com/view/bill-byrne/home) at the [Machine Intelligence Laboratory](https://mi.eng.cam.ac.uk/), Cambridge University Engineering Department, on my Master of Engineering project in multimodal artificial intelligence.
 
