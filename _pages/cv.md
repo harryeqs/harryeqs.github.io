@@ -14,7 +14,7 @@ Education
 BA (Hons) and MEng in *Information and Computer Engineering*  
 **University of Cambridge**, Oct 2022 - Jun 2026
   * *Grade:* First Class in First, Second and Third Year
-  * *Relevant Modules:* Probabilisitc Machine Learning, Computational Statistics and Machine Learning, Deep Learning and Structured Data, Statistical Signal and Network Models, Computer Vision,Computational Neuroscience
+  * *Relevant Modules:* Probabilisitc Machine Learning, Computational Statistics and Machine Learning, Deep Learning and Structured Data, Statistical Signal and Network Models, Computer Vision, Computational Neuroscience
 
 Professional Experience
 ======
@@ -52,4 +52,3 @@ Service and Leadership
 * Publicity Officer, Cambridge University Chinese Orchestra Society (CUCOS), 2025-2026
 * Logistics Officer, Cambridge University Chinese Orchestra Society (CUCOS), 2024-2025
 * IT Coordinator, Cambridge University Chinese Students Society (CCS), 2023-2024
-
