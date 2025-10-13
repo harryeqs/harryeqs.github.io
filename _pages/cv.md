@@ -13,10 +13,10 @@ Education
 ======
 BA (Hons) and MEng in *Information and Computer Engineering*  
 **University of Cambridge**, Oct 2022 - Jun 2026
-  * *Grade:* First Class in First, Second and Third Year
-  * *Relevant Modules:* Probabilisitc Machine Learning, Computational Statistics and Machine Learning, Deep Learning and Structured Data, Statistical Signal and Network Models, Computer Vision, Computational Neuroscience
+  * **Grade:** *First Class* in First, Second and Third Year
+  * **Relevant Modules:** Probabilistic Machine Learning, Computational Statistics and Machine Learning, Deep Learning and Structured Data, Statistical Signal and Network Models, Computer Vision, Computational Neuroscience
 
-Professional Experience
+Professional Experiences
 ======
 Undergraduate Research Assistant  
 **Department of Engineering, University of Cambridge** · Internship  
