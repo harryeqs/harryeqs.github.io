@@ -16,7 +16,3 @@ I am broadly interested in **artificial intelligence**, with a particular focus 
 
 # Beyond Research
 I am a music lover and enjoy a wide range of genres, from classical to jazz and rock. I play the cello and bass guitar, and occasionally dabble with the guitar. Outside of music, I also enjoy hiking and experimenting in the kitchen.
-
-<div id="visitor-globe" style="width: 200px; height: 200px;">
-  <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=dy8YhPt7udO0EsMAmZgCvxN9rL0t0ipguqNmf_BQmqc"></script>
-</div>
