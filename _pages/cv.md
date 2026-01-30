@@ -43,6 +43,7 @@ Software Engineer Intern
 
 Awards and Prizes
 ======
+* Powrie Scholarship, 2025
 * Selwyn College Scholar, 2023-2026
 * Cambridge Trust Scholar, 2022-2026
 
