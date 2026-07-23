@@ -1,0 +1,82 @@
+/* ==========================================================================
+   CUSTOM: soft yellow wave lines over original background
+   ========================================================================== */
+
+$wave-yellow: #e8d48a;
+
+:root {
+  --wave-yellow: #{$wave-yellow};
+}
+
+/* Keep original page bg; draw soft yellow stroke-only waves on top */
+body {
+  background-color: var(--global-bg-color);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C180,100 360,20 540,55 C720,90 900,25 1080,60 C1260,95 1380,40 1440,55' stroke='%23e8d48a' stroke-width='1.75' stroke-opacity='0.7'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,70 C200,30 400,100 600,55 C800,10 1000,95 1200,50 C1320,20 1400,75 1440,65' stroke='%23edd9a0' stroke-width='1.4' stroke-opacity='0.55'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C160,85 320,15 480,55 C640,95 800,20 960,60 C1120,100 1280,30 1440,50' stroke='%23f0e0b0' stroke-width='1.5' stroke-opacity='0.6'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,65 C240,25 480,95 720,50 C960,5 1200,90 1440,55' stroke='%23dfc878' stroke-width='1.2' stroke-opacity='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size:
+    110% 180px,
+    130% 200px,
+    120% 160px,
+    140% 220px;
+  background-position:
+    left 12%,
+    left 38%,
+    left 62%,
+    left 88%;
+  background-attachment: fixed;
+}
+
+html[data-theme="dark"] body {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C180,100 360,20 540,55 C720,90 900,25 1080,60 C1260,95 1380,40 1440,55' stroke='%23e8d48a' stroke-width='1.75' stroke-opacity='0.35'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' fill='none' preserveAspectRatio='none'%3E%3Cpath d='M0,70 C200,30 400,100 600,55 C800,10 1000,95 1200,50 C1320,20 1400,75 1440,65' stroke='%23dfc878' stroke-width='1.4' stroke-opacity='0.28'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 110% 180px, 130% 200px;
+  background-position: left 25%, left 70%;
+  background-attachment: fixed;
+}
+
+/* Footer: soft yellow matching wave lines */
+.page__footer {
+  background-color: var(--wave-yellow) !important;
+  color: #5c4a1a;
+  border-top: 1px solid #d4c070;
+
+  .fas,
+  .fab,
+  .far,
+  .fal {
+    color: #5c4a1a;
+  }
+
+  a:hover {
+    color: #2f250c;
+  }
+}
+
+html[data-theme="dark"] .page__footer {
+  background-color: #c9b46a !important;
+  color: #2f250c;
+  border-top-color: #a89850;
+}
+
+/* Embedded CV PDF */
+.cv-pdf-embed {
+  width: 100%;
+  min-height: 80vh;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.cv-pdf-actions {
+  margin: 0 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  align-items: center;
+}
