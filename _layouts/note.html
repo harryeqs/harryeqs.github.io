@@ -1,0 +1,26 @@
+---
+layout: single
+---
+
+{% include base_path %}
+
+{% if page.module_name %}
+  <p class="page__meta"><em>{{ page.module_name }}</em></p>
+{% endif %}
+
+{% if page.pdf %}
+  {% assign pdf_href = page.pdf %}
+{% else %}
+  {% assign note_code = page.module | default: page.slug %}
+  {% capture pdf_href %}/files/notes/{{ note_code }}.pdf{% endcapture %}
+{% endif %}
+{% unless pdf_href contains "://" %}
+  {% assign pdf_href = pdf_href | prepend: base_path %}
+{% endunless %}
+  <div class="cv-pdf-actions">
+    <a href="{{ pdf_href }}" class="btn btn--primary" target="_blank" rel="noopener">Open PDF</a>
+    <a href="{{ pdf_href }}" class="btn btn--inverse" download>Download PDF</a>
+  </div>
+  <iframe class="cv-pdf-embed" src="{{ pdf_href }}#view=FitH" title="{{ page.module | default: page.title | strip_html | escape }}"></iframe>
+
+{{ content }}

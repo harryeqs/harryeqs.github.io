@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Notes"
+permalink: /notes/
+author_profile: true
+---
+
+{% assign notes = site.notes | sort: "title" | sort: "module" %}
+{% assign seen = "|" %}
+{% for post in notes %}
+  {% assign key = post.module | default: "" %}
+  {% assign marker = "|" | append: key | append: "|" %}
+  {% unless seen contains marker %}
+    {% if key != "" %}
+      <h2>{{ key }}{% if post.module_name %} · {{ post.module_name }}{% endif %}</h2><hr />
+    {% elsif seen != "|" %}
+      <h2>Other</h2><hr />
+    {% endif %}
+    {% assign seen = seen | append: key | append: "|" %}
+  {% endunless %}
+  {% include archive-single.html %}
+{% endfor %}

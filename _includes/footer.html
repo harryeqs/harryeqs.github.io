@@ -23,3 +23,20 @@
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
   Site last updated {{ "now" | date: '%Y-%m-%d' }}
 </div>
+
+<button class="penrose-mark" type="button" aria-label="Rotate the Penrose triangle">
+  <img src="{{ base_path }}/images/favicon.svg" alt="" width="120" height="120">
+</button>
+<script>
+  (function () {
+    var button = document.querySelector(".penrose-mark");
+    if (!button) return;
+    var img = button.querySelector("img");
+    var steps = 0;
+    button.addEventListener("click", function () {
+      steps += 1;
+      var turns = Math.floor(steps / 12);
+      img.style.transform = "rotate(" + (steps * 30) + "deg) scale(" + Math.pow(0.5, turns) + ")";
+    });
+  })();
+</script>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Penrose triangle">
+  <style>
+    .light { fill: #e8d48a; }
+    .mid { fill: #c4a45a; }
+    .dark { fill: #494e52; }
+    @media (prefers-color-scheme: dark) {
+      .light { fill: #e8d48a; }
+      .mid { fill: #c4a45a; }
+      .dark { fill: #f4efe4; }
+    }
+  </style>
+  <polygon class="light" points="27.78,8.24 46.31,41.23 25.71,41.25 21.76,48.31 58.24,48.32 35.98,8.22"/>
+  <polygon class="mid" points="27.78,8.24 5.76,48.31 9.80,55.57 28.06,22.48 38.25,41.25 46.32,41.25"/>
+  <polygon class="dark" points="28.06,22.48 32.09,29.90 21.74,48.32 58.24,48.33 54.40,55.78 9.80,55.57"/>
+</svg>

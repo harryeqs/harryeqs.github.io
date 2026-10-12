@@ -100,13 +100,14 @@
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
 
-<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/QY.png"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/QY.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/QY.png" sizes="192x192"/>
+<!-- Penrose triangle favicon -->
+<link rel="icon" href="http://localhost:4000/images/favicon.svg" type="image/svg+xml"/>
+<link rel="icon" href="http://localhost:4000/images/favicon-32.png" type="image/png" sizes="32x32"/>
+<link rel="icon" href="http://localhost:4000/favicon.ico" sizes="48x48"/>
+<link rel="apple-touch-icon" href="http://localhost:4000/images/apple-touch-icon.png"/>
 <link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/QY.ico"/>
-<meta name="theme-color" content="#e8fcfc"/>
+<meta name="theme-color" content="#fdfbf0" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#474747" media="(prefers-color-scheme: dark)"/>
 
 <!-- EB Garamond font from Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -134,6 +135,9 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/notes/">Notes</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
@@ -173,8 +177,8 @@
 
   <div class="author__content">
     <h3 class="author__name">Qianshuo (Harry) Ye</h3>
-    <p class="author__pronouns">he/him</p>
-    <p class="author__bio">MEng Graduate in Information Engineering @ University of Cambridge</p>
+    
+    <p class="author__bio">MPhil in Advanced Computer Science @ University of Cambridge</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -255,6 +259,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    
     <meta itemprop="headline" content="About Me">
     
     
@@ -273,15 +278,21 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Hi there! I’m Qianshuo (Harry) Ye (Chinese: 叶千硕), a fourth-year Information and Computer Engineering undergraduate at the University of Cambridge.</p>
+        <p>Hi there! I’m Qianshuo Ye (叶千硕), also known as Harry. I’m an MPhil student in Advanced Computer Science at <a href="https://www.queens.cam.ac.uk/">Queens’ College, University of Cambridge</a>, working with <a href="https://www.cl.cam.ac.uk/~mj201/">Prof. Mateja Jamnik</a> on concept discovery for hierarchical concept bottleneck models.</p>
 
-<p>I am currently working with <a href="https://sites.google.com/view/bill-byrne/home">Prof. Bill Byrne</a> at the <a href="https://mi.eng.cam.ac.uk/">Machine Intelligence Laboratory</a>, Cambridge University Engineering Department, on my Master of Engineering project in multimodal artificial intelligence.</p>
+<p>Previously, I studied Information and Computer Engineering at <a href="https://www.sel.cam.ac.uk/">Selwyn College, University of Cambridge</a>, earning a Master of Engineering (MEng) and a Bachelor of Arts (BA). For my MEng project, I worked with <a href="https://sites.google.com/view/bill-byrne/home">Prof. Bill Byrne</a> at the <a href="https://mi.eng.cam.ac.uk/">Machine Intelligence Laboratory</a> in Cambridge’s Department of Engineering, investigating implicit visual grounding in vision-language models for chart question answering. In summer 2026, I worked with <a href="https://difanzou.github.io/">Prof. Difan Zou</a> at the <a href="https://www.cds.hku.hk/">School of Computing and Data Science, University of Hong Kong</a>, exploring applications of <strong>mechanistic interpretability</strong>.</p>
 
-<h1 id="research-interests">Research Interests</h1>
-<p>I am broadly interested in <strong>artificial intelligence</strong>, with a particular focus on <strong>explainable AI</strong> and <strong>multimodal learning.</strong> My current work investigates the implicit visual grounding of Vision-Language Models in chart question answering. I am also fascinated by <strong>computational neuroscience</strong>, especially how insights from the brain can inspire new architectures for learning and memory. Beyond these, I am also intrigued by the development of models with <strong>abstract reasoning capabilities</strong> and <strong>AI alignment</strong>.</p>
+<h2 id="research-interests">Research Interests</h2>
 
-<h1 id="beyond-research">Beyond Research</h1>
-<p>I am a music lover and enjoy a wide range of genres, from classical to jazz and rock. I play the cello and bass guitar, and occasionally dabble with the guitar. Outside of music, I also enjoy hiking and experimenting in the kitchen.</p>
+<p>I’m interested in making AI systems <strong>more interpretable</strong>, both by understanding <em>how models work internally</em> and by designing models and representations that are <em>intrinsically interpretable</em>. In particular, I’m drawn to <strong>concept-based interpretability</strong> and <strong>mechanistic interpretability</strong>. I’m also fascinated by <strong>computational neuroscience</strong>, especially how insights from the brain can inspire new architectures for learning and memory.</p>
+
+<h2 id="beyond-research">Beyond Research</h2>
+
+<p>Outside of research, music is a big part of my life. My tastes span classical, jazz, and rock, and I play the cello, bass and guitar. I also enjoy running, bouldering, hiking, and trying out new recipes in the kitchen :)</p>
+
+<hr />
+
+<p><em>Always happy to chat about interpretability, swap music recommendations, or hear about a recipe worth trying!</em></p>
 
 
         
@@ -352,8 +363,25 @@
 
 <div class="page__footer-copyright">
   &copy; 2026 Qianshuo (Harry) Ye, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-07-23
+  Site last updated 2026-10-12
 </div>
+
+<button class="penrose-mark" type="button" aria-label="Rotate the Penrose triangle">
+  <img src="http://localhost:4000/images/favicon.svg" alt="" width="120" height="120">
+</button>
+<script>
+  (function () {
+    var button = document.querySelector(".penrose-mark");
+    if (!button) return;
+    var img = button.querySelector("img");
+    var steps = 0;
+    button.addEventListener("click", function () {
+      steps += 1;
+      var turns = Math.floor(steps / 12);
+      img.style.transform = "rotate(" + (steps * 30) + "deg) scale(" + Math.pow(0.5, turns) + ")";
+    });
+  })();
+</script>
 
       </footer>
     </div>

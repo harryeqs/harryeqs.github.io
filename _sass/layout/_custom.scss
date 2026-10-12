@@ -64,10 +64,54 @@ html[data-theme="dark"] .page__footer {
   border-top-color: #a89850;
 }
 
+.penrose-mark {
+  position: absolute;
+  right: 1.5rem;
+  bottom: calc(100% + 2.25rem);
+  width: 120px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+  z-index: 2;
+  appearance: none;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform-origin: 49.92% 58.35%;
+    transition: transform 0.55s cubic-bezier(0.4, 0.05, 0.2, 1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #5c4a1a;
+    outline-offset: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .penrose-mark img {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .penrose-mark {
+    width: 84px;
+    right: 0.85rem;
+    bottom: calc(100% + 1.25rem);
+  }
+}
+
 /* Embedded CV PDF */
 .cv-pdf-embed {
+  display: block;
   width: 100%;
-  min-height: 80vh;
+  height: 80vh;
   border: 1px solid var(--global-border-color);
   border-radius: 4px;
   background: #fff;
@@ -79,4 +123,5 @@ html[data-theme="dark"] .page__footer {
   flex-wrap: wrap;
   gap: 0.75em;
   align-items: center;
+  width: 100%;
 }
