@@ -93,9 +93,77 @@ html[data-theme="dark"] .page__footer {
   }
 }
 
+.penrose-mark.is-flying,
+.penrose-mark.is-captured {
+  position: fixed;
+  right: auto;
+  bottom: auto;
+  z-index: 15;
+  overflow: visible;
+}
+
+.penrose-mark.is-flying img,
+.penrose-mark.is-captured img {
+  transition: none;
+}
+
+.penrose-caption {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0.7rem);
+  transform: translateY(-50%);
+  white-space: nowrap;
+  line-height: 1.2;
+  font-family: "EB Garamond", Baskerville, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+  color: #a88b3d;
+  pointer-events: none;
+  transition: none;
+  padding: 0.08em 0.45em;
+  background-color: var(--global-bg-color);
+  border-radius: 2px;
+  animation: penrose-caption-in 0.4s ease both;
+
+  &.is-left {
+    left: auto;
+    right: calc(100% + 0.7rem);
+  }
+
+  &.is-below,
+  &.is-above {
+    left: 50%;
+    transform: translateX(calc(-50% + var(--penrose-caption-shift, 0px)));
+  }
+
+  &.is-below {
+    top: calc(100% + 0.45rem);
+  }
+
+  &.is-above {
+    top: auto;
+    bottom: calc(100% + 0.45rem);
+  }
+}
+
+html[data-theme="dark"] .penrose-caption {
+  color: #e8d48a;
+}
+
+@keyframes penrose-caption-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .penrose-mark img {
     transition: none;
+  }
+
+  .penrose-caption {
+    animation: none;
   }
 }
 
